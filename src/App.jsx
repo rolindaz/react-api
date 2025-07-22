@@ -40,19 +40,30 @@ function App() {
   return (
     <>
       <div className="container">
-        <ul>
+        <div className='row row-cols-lg-4 row-gap-3'>
           {
             actressesData && actressesData.map((actress) => {
               return (
-                <li key={actress.id}>
-                  {actress.name}
-                </li>
+                <div className="col h-100" key={actress.id}>
+                  <div className="card h-100">
+                    <div className="card-top">
+                      <img src={actress.image} alt={actress.name} />
+                    </div>
+                    <div className="card-body" >
+                      <h5 className="card-title">
+                        {actress.name}
+                      </h5>
+                      <p className="card-text">
+                        {actress.birth_year}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               )
             })
           }
-
-        </ul>
-      </div>
+        </div >
+      </div >
     </>
   )
 }
