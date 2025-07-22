@@ -54,7 +54,20 @@ function App() {
                         {actress.name}
                       </h5>
                       <p className="card-text">
-                        {actress.birth_year}
+                        <ul className='list-unstyled'>
+                          <li>
+                            <b>Born:</b> {actress.birth_year}
+                          </li>
+                          <li>
+                            <b>Nationality:</b> {actress.nationality}
+                          </li>
+                          <li>
+                            <b>Awards:</b> {actress.awards}
+                          </li>
+                          <li>
+                            <b>Info:</b> <br /> {actress.biography}
+                          </li>
+                        </ul>
                       </p>
                     </div>
                   </div>

@@ -13,7 +13,7 @@ img {
 }
 
 .row {
-  height: 450px;
+  height: 700px;
 
   .card-top {
     height: 350px;
@@ -24,6 +24,5 @@ img {
       object-fit: cover;
       object-position: top;
     }
-
   }
 }
